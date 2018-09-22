@@ -1,3 +1,7 @@
 Here are the notes.
 
 React router for routing the different pages and creating the transitions
+
+- css did not show.... Resource interpreted as Stylesheet but transferred with MIME type text/html: "http://localhost:8080/styles.css".
+
+    ---> install express

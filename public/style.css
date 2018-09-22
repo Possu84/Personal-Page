@@ -5,11 +5,11 @@
 .welcome-wrapper {
   width: 400px;
   height: 600px;
-  background-color: red;
+  background-color: silver;
 }
 
 #test {
-  font-size: 600px;
+  font-size: 100px;
   height: 100px;
   width: 100px;
   background-color: red;
