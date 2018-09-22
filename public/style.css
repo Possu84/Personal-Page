@@ -1,0 +1,9 @@
+* {
+  background-color: blue;
+}
+
+#welcome-wrapper {
+  width: 400px;
+  height: 600px;
+  background-color: red;
+}
