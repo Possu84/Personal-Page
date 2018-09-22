@@ -2,13 +2,15 @@ import React from "react";
 
 import App from "./app";
 
+import App from "./app";
+
 class Welcome extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     modal: false
-  //   };
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false
+    };
+  }
   componentDidMount() {
     console.log("welcome mounted");
   }

@@ -2,8 +2,15 @@
   background-color: blue;
 }
 
-#welcome-wrapper {
+.welcome-wrapper {
   width: 400px;
   height: 600px;
+  background-color: red;
+}
+
+#test {
+  font-size: 600px;
+  height: 100px;
+  width: 100px;
   background-color: red;
 }
