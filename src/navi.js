@@ -1,26 +1,26 @@
 import React from "react";
 
-import App from "./app";
-
-class Welcome extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
-  }
-  componentDidMount() {
-    console.log("welcome mounted");
-  }
-  render() {
-    return (
-      <div>
-        <div className="welcome-wrapper">
-          <h1 className="test"> Welcomeee </h1>
+function Navi() {
+  return (
+    <div>
+      <header>
+        <div className="navi_container">
+          <a href="/">
+            <p className="navi_text">Home</p>
+          </a>
+          <a href="/contact">
+            <p className="navi_text">Contact</p>
+          </a>
+          <a href="/projects">
+            <p className="navi_text">Online</p>
+          </a>
+          <a href="/bio">
+            <p className="navi_text">Bio</p>
+          </a>
         </div>
-      </div>
-    );
-  }
+      </header>
+    </div>
+  );
 }
 
-export default Welcome;
+export default Navi;

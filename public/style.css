@@ -1,5 +1,5 @@
 * {
-  background-color: blue;
+  margin: 0;
 }
 
 .welcome-wrapper {
@@ -12,5 +12,25 @@
   font-size: 100px;
   height: 100px;
   width: 100px;
+  background-color: red;
+}
+
+.navi_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 30px;
+  right: 30px;
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  margin-left: -250px;
+  margin-top: -250px;
+
   background-color: red;
 }
