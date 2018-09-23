@@ -1,5 +1,10 @@
 Here are the notes.
 
+
+-- Install react transition group v2
+
+-- Install style-components
+
 React router for routing the different pages and creating the transitions
 
 -- Css did not show.... Resource interpreted as Stylesheet but transferred with MIME type text/html: "http://localhost:8080/styles.css".

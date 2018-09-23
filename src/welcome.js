@@ -26,8 +26,13 @@ class Welcome extends React.Component {
       <div>
         <div className="welcome-wrapper">
           <h1 className="test"> Welcomeee </h1>
-          <button onClick={this.toggleModal}> TEST </button>
-          {this.state.modal && <Modal />}{" "}
+          <div className="welcome-div">
+            <h1 className="typewriter">
+              Hello..... my name is Jonas.... and I make internet.... exiting ;)
+            </h1>
+            <button onClick={this.toggleModal}> TEST </button>
+            {this.state.modal && <Modal />}{" "}
+          </div>
         </div>
       </div>
     );

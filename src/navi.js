@@ -3,7 +3,7 @@ import React from "react";
 function Navi() {
   return (
     <div>
-      <header>
+      <header id="navi">
         <div className="navi_container">
           <a href="/">
             <p className="navi_text">Home</p>
@@ -12,7 +12,7 @@ function Navi() {
             <p className="navi_text">Contact</p>
           </a>
           <a href="/projects">
-            <p className="navi_text">Online</p>
+            <p className="navi_text">Projecyts</p>
           </a>
           <a href="/bio">
             <p className="navi_text">Bio</p>

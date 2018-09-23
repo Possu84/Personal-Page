@@ -49,10 +49,13 @@ class App extends React.Component {
   render() {
     return (
       <div id="app_main">
+        <Navi />
         <BrowserRouter>
           <div>
-            <Header />
-            <Container />
+            <Route exact path="/" component={Welcome} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/bio" component={Bio} />
+            <Route exact path="/contact" component={Contact} />
           </div>
         </BrowserRouter>
       </div>
@@ -67,4 +70,9 @@ export default App;
 <Route exact path="/projects" component={Projects} />
 <Route exact path="/bio" component={Bio} />
 <Route exact path="/contact" component={Contact} /> */
+}
+
+{
+  /* <Header />
+<Container /> */
 }
