@@ -27,3 +27,6 @@ this.setState({
   modal: !this.state.modal
 });
 }
+
+
+--- can i populate fields without making a shop

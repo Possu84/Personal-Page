@@ -2,8 +2,6 @@ import React from "react";
 
 import App from "./app";
 
-import Modal from "./modal";
-
 class Contacts extends React.Component {
   constructor(props) {
     super(props);

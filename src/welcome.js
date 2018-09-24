@@ -2,20 +2,21 @@ import React from "react";
 
 import App from "./app";
 
-import Modal from "./modal";
+import Project1 from "./project1";
 
 class Welcome extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      Project1: false
     };
-    this.toggleModal = this.toggleModal.bind(this);
+    this.toggleProject1 = this.toggleProject1.bind(this);
   }
-  toggleModal() {
+
+  toggleProject1() {
     console.log("toggling the modal");
     this.setState({
-      modal: !this.state.modal
+      Project1: !this.state.Project1
     });
   }
   componentDidMount() {
@@ -30,8 +31,10 @@ class Welcome extends React.Component {
             <h1 className="typewriter">
               Hello..... my name is Jonas.... and I make internet.... exiting ;)
             </h1>
-            <button onClick={this.toggleModal}> TEST </button>
-            {this.state.modal && <Modal />}{" "}
+            <button onClick={this.toggleProject1}> TEST </button>
+            {this.state.Project1 && (
+              <Project1 toggleProject1={this.toggleProject1} />
+            )}{" "}
           </div>
         </div>
       </div>

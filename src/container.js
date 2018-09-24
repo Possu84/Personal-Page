@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+import App from "./app";
 import Welcome from "./welcome";
 import Bio from "./bio";
 import Projects from "./projects";
@@ -14,7 +15,7 @@ function Container({ location }) {
       <TransitionGroup>
         <CSSTransition
           key={location.key}
-          className="fade-enter"
+          classNames="fade" // this is the effect
           timeout={{ enter: 300, exit: 300 }}
         >
           <Switch location={location}>

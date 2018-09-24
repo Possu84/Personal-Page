@@ -2,20 +2,20 @@ import React from "react";
 
 import App from "./app";
 
-import Modal from "./modal";
+import Project1 from "./project1";
 
 class Bio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      project1: false
     };
-    this.toggleModal = this.toggleModal.bind(this);
+    this.toggleProject1 = this.toggleProject1.bind(this);
   }
-  toggleModal() {
-    console.log("toggling the modal");
+  toggleProject1() {
+    console.log("toggling the project1");
     this.setState({
-      modal: !this.state.modal
+      project1: !this.state.project1
     });
   }
   componentDidMount() {
@@ -27,8 +27,10 @@ class Bio extends React.Component {
         <div className="welcome-wrapper">
           <h1 className="test"> Bio </h1>
           <div className="welcome-div">
-            <button onClick={this.toggleModal}> TEST </button>
-            {this.state.modal && <Modal />}{" "}
+            <button onClick={this.toggleProject1}> TEST </button>
+            {this.state.project1 && (
+              <Project1 toggleProject1={this.toggleProject1} />
+            )}{" "}
           </div>
         </div>
       </div>

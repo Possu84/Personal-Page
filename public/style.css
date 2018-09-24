@@ -3,13 +3,7 @@
 }
 
 .welcome-wrapper {
-  position: absolute;
-  top: 40px;
-  left: 20%;
-  right: 20%;
-
-  height: 600px;
-  background-color: silver;
+  width: 100%;
 }
 
 #test {
@@ -19,12 +13,46 @@
   background-color: red;
 }
 
+/*///////////////PROJECT PAGE//////////////*/
+
+.project-wrapper {
+  width: 100%;
+}
+
+.project-flow {
+  position: absolute;
+  left: 49%;
+  right: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-container-component {
+  width: 300px;
+  margin-left: -150px;
+  height: 100px;
+  background-color: pink;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*///////////////NAVIGATION//////////////*/
+
 .navi_container {
+  width: 100%;
+  height: 50px;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  left: 30px;
-  right: 30px;
+
+  background-color: rgba(36, 19, 99, 0.7);
+  z-index: 1;
+}
+
+.navi_text {
+  color: white;
 }
 
 .modal {
@@ -37,6 +65,21 @@
   margin-top: -250px;
 
   background-color: red;
+}
+
+.project-modal {
+  -webkit-animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: -250px;
+  margin-top: -250px;
+  border-radius: 30px;
+  padding-top: 50px;
+  background-color: blue;
 }
 
 .typewriter {
